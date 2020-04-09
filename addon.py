@@ -26,7 +26,7 @@ def episodes1():
     return items
 
 @plugin.route('/episodes/')
-def episodes():
+def episodes2():
     soup2 = mainaddon.get_soup2(url2)
     playable_podcast2 = mainaddon.get_playable_podcast2(soup2)
     items = mainaddon.compile_playable_podcast2(playable_podcast2)
